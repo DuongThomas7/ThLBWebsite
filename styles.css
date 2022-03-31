@@ -86,7 +86,8 @@ body {
 .button:current {
     background-color: #2e80b6;
 }
-  
+
+/* Change background color of buttons on hover */
 .button:hover {
     background-color: #2e9dff;
 }
@@ -280,4 +281,46 @@ body {
 .box.transparent {
     border-style: none;
     background-color: transparent;
+}
+
+.tabs-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px;
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.button.tablinks{
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.button.tablinks:hover {
+    background-color: #2e80b6;
+}
+  
+  /* Create an active/current tablink class */
+.button.tablinks.active {
+    background-color: #2e80b6;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }

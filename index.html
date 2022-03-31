@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theta Lambda Beta</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -15,9 +16,9 @@
 
     <div class = "hero-section centered">
         <div class = "container">
-            <div class = "text-background">
-                <h1 class = "hero-heading ">Theta Lambda Beta</h1>
-                <p class = "hero-subheading ">Strive to be the best, Rise above the rest</p>
+            <div class = "">
+                <h1 class = "hero-heading text-background">Theta Lambda Beta</h1>
+                <p class = "hero-subheading text-background">Strive to be the best, Rise above the rest</p>
             </div>
             
             <div class = "container-block">
@@ -111,6 +112,49 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+
+    <div class = "section">
+        <div class = "container">
+            <div class = "section-title">
+                <h2 class="section-heading centered">What we do</h2>
+                <p class="section-subheading center">Our Achievements</p>
+            </div>
+
+            <div class = "tabs-container">
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks button" onclick="openTab(event, 'missionStatement')">Mission Statement</button>
+                    <button class="tablinks button" onclick="openTab(event, 'fraternityHistory')">Fraternity History</button>
+                    <button class="tablinks button" onclick="openTab(event, 'FAQ')">Frequently Asked Questions</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="missionStatement" class="tabcontent">
+                    <h3>Mission Statement</h3>
+                    <p>We, the brothers of Theta Lambda Beta, vow to uphold the principles that 
+                        represent this fraternity. We shall advocate the growth and respectability 
+                        of each member. Our goals are to demonstrate high performance in the classroom 
+                        and increased involvement in campus, community, and nation. We strive for the 
+                        values of Truth, Leadership, and Brotherhood, as well as acknowledge cultural 
+                        awareness within the Asian American community. The skills we acquire will be vital 
+                        for our experiences beyond the years of higher learning. Respect is among our 
+                        greatest values; therefore any resolutions and judgments shall not take religion, 
+                        nor race into account.</p>
+                </div>
+                
+                <div id="fraternityHistory" class="tabcontent">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                
+                <div id="FAQ" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
