@@ -1,6 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
+}
+
+.container {
+    
 }
 
 .hero-section {
@@ -129,5 +137,92 @@ body {
 }
   
 .hollow-button.all-caps {
+    text-transform: uppercase;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+  
+.section-heading.centered {
+    color: #676770;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.section-subheading.center {
+  color: #8e8e9c;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.columns {
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.box {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #dcebf7;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #dcebf7;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #dcebf7;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #dcebf7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.box-heading{
+    color: #6a859c;
+    width: auto;
+    height: auto;
+    font-size: 38px;
+    line-height: 24px;
+}
+
+.box-subheading{
+    color: #676770;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 7px;
     text-transform: uppercase;
 }
