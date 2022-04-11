@@ -8,6 +8,11 @@ body {
     margin: 0px;
 }
 
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
 .container-block{
     align-items: flex-start;
 }
@@ -289,6 +294,7 @@ body {
     flex-direction: column;
     position: relative;
     text-align: center;
+    width: 1200px;
 }
 
 .tab {
@@ -324,3 +330,8 @@ body {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+.tablinks.hollow-button.accent {
+    background-color: #192024
+}
+
