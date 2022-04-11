@@ -294,7 +294,6 @@ p {
     flex-direction: column;
     position: relative;
     text-align: center;
-    width: 1200px;
 }
 
 .tab {
@@ -334,4 +333,3 @@ p {
 .tablinks.hollow-button.accent {
     background-color: #192024
 }
-
