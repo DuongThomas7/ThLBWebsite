@@ -27,9 +27,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install --save-dev jest puppeteer jest-puppeteer
     - name: install puppeteer libraries
-    - run: |
-        sudo apt-get update
-        sudo apt-get install -y libgbm1
+    - run: sudo apt-get update
+    - run: sudo apt-get install -y libgbm1
+    
     - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     - run: sudo apt install ./google-chrome-stable_current_amd64.deb
 
