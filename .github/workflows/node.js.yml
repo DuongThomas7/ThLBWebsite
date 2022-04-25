@@ -25,7 +25,13 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    - run: npm install --save-dev jest puppeteer jest-puppeteer
+    - run: sudo apt-get update
+    - run: sudo apt-get install -y libgbm1
+    
+    - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - run: sudo apt install ./google-chrome-stable_current_amd64.deb
+
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
